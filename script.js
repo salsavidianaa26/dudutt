@@ -6,7 +6,7 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "duduuttt";
+  sender = "sasaa";
 }
 
 
@@ -34,8 +34,8 @@ document.querySelector(".tombol").addEventListener('click', function () {
             title: `${nama} kamuu sayang ga sama ${sender}?`,
             showDenyButton: true,
             showCancelButton: false,
-            confirmButtonText: `Sayang bangett`,
-            denyButtonText: `Nggak sayang`,
+            confirmButtonText: `sayang bangett`,
+            denyButtonText: `nggak b aja`,
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
@@ -44,7 +44,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   title: 'coba seberapa sayang emangnya?',
                   icon: 'question',
                   input: 'range',
-                  inputLabel: 'Antara satu sampai seratus ya',
+                  inputLabel: 'antara satu sampai seratus ya',
                   inputAttributes: {
                     min: 1,
                     max: 100,
@@ -65,7 +65,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                       if (result.isConfirmed) {
                         Swal.fire(`ahhh masa siiiii HAHAHHA, iya ${sender} juga kangen bangett samaaa ${nama} , TAPI BOONG :)`).then(function () {
                           Swal.fire('oke ini terakhir :)').then(function () {
-                            Swal.fire('Coba kamu klik ikon hati di paling bawah')
+                            Swal.fire('coba kamu klik ikon hati di paling bawah')
                           })
                         })
                       } else if (result.isDenied) {
